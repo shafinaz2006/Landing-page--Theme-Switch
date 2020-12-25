@@ -1,18 +1,18 @@
 /* setting the variable */
 
 :root {
-    $white: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
     --TopBGPattern: hsl(225, 100%, 98%);
-    $CardBG: hsl(227, 47%, 96%);
+    --CardBG: hsl(227, 47%, 96%);
     --CardBGhover: hsl(227, 47%, 92%);
     --Text: hsl(228, 12%, 44%);
     --Text1: hsl(230, 17%, 14%);
 }
 
 :root[data-theme='dark'] {
-    $white: hsl(230, 17%, 14%);
+    --white: hsl(230, 17%, 14%);
     --TopBGPattern: hsl(232, 19%, 15%);
-    $CardBG: hsl(228, 28%, 20%);
+    --CardBG: hsl(228, 28%, 20%);
     --CardBGhover: hsl(228, 28%, 25%);
     --Text: hsl(228, 34%, 66%);
     --Text1: hsl(0, 0%, 100%);
@@ -98,13 +98,13 @@ input:checked+.slider:before {
 }
 
 html {
-    background-color: var($white);
+    background-color: var(--white);
 }
 
 body {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    background-color: var($white);
+    background-color: var(--white);
 }
 
 #main {
@@ -116,7 +116,7 @@ body {
     align-items: center;
     padding-left: 15%;
     padding-right: 15%;
-    background-color: var($white);
+    background-color: var(--white);
 }
 
 #header {
@@ -178,7 +178,7 @@ body {
 .firstBox {
     height: 10rem;
     width: 12rem;
-    background-color: var($CardBG);
+    background-color: var(--CardBG);
     border-radius: 3%;
     display: flex;
     flex-direction: column;
@@ -273,7 +273,7 @@ body {
 .secondBox {
     height: 6rem;
     width: 12rem;
-    background-color: var($CardBG);
+    background-color: var(--CardBG);
     border-radius: 3%;
     display: flex;
     flex-direction: row;
